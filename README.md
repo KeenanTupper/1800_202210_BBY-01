@@ -7,6 +7,7 @@
 ## General Info
 This browser based web application to ...
 My name is Kelvin, I'm excited about coding in a team
+Heyy it's Keenan, I'm excited to go from having nothing to having something!
 	
 ## Technologies
 Technologies used for this project:
