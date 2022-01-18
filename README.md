@@ -6,6 +6,7 @@
 
 ## General Info
 This browser based web application to ...
+My name is Kelvin, I'm excited about coding in a team
 	
 ## Technologies
 Technologies used for this project:
