@@ -6,9 +6,16 @@
 
 ## General Info
 This browser based web application to ...
+<<<<<<< HEAD
 My name is Kelvin, I'm excited about coding in a team
 Heyy it's Keenan, I'm excited to go from having nothing to having something!
 	
+=======
+* My name is Kelvin, I'm excited about coding in a team
+* My name is ByoungWoo, coding is hard for me
+* My name is Keenan, I'm excited
+
+>>>>>>> 5474eb272c2cbbb4814440105d93caab775c745f
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
