@@ -1,6 +1,9 @@
 function goToMeet() {
     window.location.replace("./meetup.html");
 }
+function goToJoin() {
+    window.location.replace("./join.html");
+}
 
 function insertName(){
     // to check if the user is logged in:
@@ -19,3 +22,4 @@ function insertName(){
      })
 }
 insertName();
+
