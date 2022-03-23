@@ -15,6 +15,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- Firebase 8 Library related CSS CDN go here -->
   <!-- Firebase 8 Library related JS CDN go here-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
   <!-- Other libraries go here -->
 
@@ -66,40 +72,6 @@
     </div>
   </main>
 
-  <!-- CARDS HAVE BEEN CUT OUT
-
-
-<div class="row row-cols-auto d-flex justify-content-center">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./images/card3.jfif" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./images/card1.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./images/card2.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
-
--->
   <footer class="py-3 bg-success">
     <div class="container">
       Find your group faster, easier and enjoy the Olympics!
@@ -107,6 +79,8 @@
   </footer>
 
 <script src="./scripts/firebase/index.js"></script>
+<script src="./scripts/firebase/authentication.js"></script>
+<script src="./scripts/firebase/firebase.js"></script>
 
 </body>
 
