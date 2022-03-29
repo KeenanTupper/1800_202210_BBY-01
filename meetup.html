@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!--use group code for titles and stuff-->
-    <title></title>
-    <meta>
+  <!--use group code for titles and stuff-->
+  <title></title>
+  <meta>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <a class="navbar-brand" href="#">Olympic Master</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="#">Olympic Master</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <h1 class="visually-hidden">Heroes examples</h1>
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="OlympicIcon.png" alt="" width="824" height="485">
+      <h1 class="display-5 fw-bold">Olympic Master</h1>
+      <div class="col-lg-6 mx-auto">
+        <h2>Your code is, <span id="code"></span></h2>
+        <p class="lead mb-4">Begin finding your group and enjoy the Olympics!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Make Group</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Join Group</button>
         </div>
-      </nav>
-    
-      <main>
-        <h1 class="visually-hidden">Heroes examples</h1>
-    
-        <div class="px-4 py-5 my-5 text-center">
-          <img class="d-block mx-auto mb-4" src="OlympicIcon.png" alt="" width="824" height="485">
-          <h1 class="display-5 fw-bold">Olympic Master</h1>
-          <div class="col-lg-6 mx-auto">
-            <h2>Your code is, <span id="code"></span></h2>
-            <p class="lead mb-4">Begin finding your seat quicker today!</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Make Group</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Join Group</button>
-            </div>
-          </div>
-        </div>
-      </main>
-    
+      </div>
+    </div>
+  </main>
+
   <!-- CARDS HAVE BEEN CUT OUT
 
 
@@ -81,16 +82,17 @@
 
 
 -->
-    
-    <footer class="py-3 bg-success">
-      <div class="container">
-        Get to your location easily
-      </div>
-    </footer>
 
-    <script src="./scripts/firebase/authentication.js"></script>
-    <script src="./scripts/firebase/firebase.js"></script>
-    <script src="./scripts/firebase/meetup.js"></script>
+  <footer class="py-3 bg-success">
+    <div class="container">
+      Get to your location easily
+    </div>
+  </footer>
+
+  <script src="./scripts/firebase/authentication.js"></script>
+  <script src="./scripts/firebase/firebase.js"></script>
+  <script src="./scripts/firebase/meetup.js"></script>
 
 </body>
+
 </html>
