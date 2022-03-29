@@ -17,3 +17,7 @@ nav {
   right: 0;
   top: 0;
 }
+
+.button {
+  text-align: right;
+}
