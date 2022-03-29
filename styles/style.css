@@ -1,0 +1,11 @@
+#notxtdecor, #notxtdecor:active {
+    text-decoration: none;
+}
+
+a[href="meetup.html"], a[href="join.html"] {
+    text-decoration: none;
+}
+
+a[href="meetup.html"] {
+    color: white;
+}

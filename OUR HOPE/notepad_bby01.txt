@@ -1,0 +1,30 @@
+App to help a group identify meeting place/spot
+that is very very crowded and hard to see. 
+
+when I signup/login:
+- ORGANIZER: create a group and get a join code, 
+- MEMBER: or join a group with a code
+- ORGANIZER: enter info for a new event, submit, get a code to share
+- EVERYONE: show the leads for my group related to that location
+- EVERYONE: see group members
+- ORGANIZER: if owner, delete group
+
+/users/0984/ name: elmo
+             email: ...
+             events: [08413, 99999]
+       8914/ name: keenan
+             email...
+
+/event/08413/ title: 
+               code: 1234
+               owner: 0984
+               members:[8914, 0984, 9877]
+               meeting-location: geolocation 
+               leads/0938 /owner: 9877
+                           details: "too short, i cant see a thing"
+                           picture: link to the picture
+                           timestamp: march22, 8:03pm
+                     9081 /owner: 8914
+                           details: "there is a subway here"
+                           picture: link to the picture
+                           timestamp: march22, 9:00pm

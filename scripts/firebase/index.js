@@ -15,11 +15,12 @@ function insertName(){
                 //get the user name
                 var user_Name= userDoc.data().name;
                 console.log(user_Name);
-                document.getElementById("#user-name").innerText=user_Name; 
+                //$("#name-goes-here").text(user_Name); //jquery
+                document.getElementById("user-name").innerText=user_Name;
             })    
         }
     
      })
-}
-insertName();
-
+    }
+    insertName();
+    

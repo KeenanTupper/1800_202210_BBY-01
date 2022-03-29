@@ -20,11 +20,12 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"/>
 
   <!-- Other libraries go here -->
 
   <!-- Link to styles of your own -->
+  <link type="text/css" rel="stylesheet" href="./styles/style.css">
   <!-- <link type="text/css" href="./styles/style.css"> -->
 </head>
 
@@ -65,8 +66,9 @@
         <h2>Welcome, <span id="user-name"></span></h2>
         <p class="lead mb-4">Begin finding your Group quicker today!</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3" onclick="goToMeet()">Make Group</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="goToJoin()">Join Group</button>
+          <!--onclick="goToMeet()" onclick="goToJoin()"  Changed redirection method-->
+          <button type="button"  class="btn btn-primary btn-lg px-4 gap-3 notxtdecor"><a href="meetup.html" >Make Group</a></button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4 notxtdecor"><a href="join.html">Join Group</a></button>
         </div>
       </div>
     </div>
@@ -78,9 +80,10 @@
     </div>
   </footer>
 
+  <script src="./scripts/firebase/firebase.js"></script>
 <script src="./scripts/firebase/index.js"></script>
-<script src="./scripts/firebase/authentication.js"></script>
-<script src="./scripts/firebase/firebase.js"></script>
+<!--<script src="./scripts/firebase/authentication.js"></script>-->
+
 
 </body>
 
