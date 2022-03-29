@@ -1,8 +1,14 @@
 function goToMeet() {
-    window.location.replace("./meetup.html");
+    rndcode = Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10))
+    +  "" + Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10));
+    localStorage.setItem("code", rndcode);
+
+    window.location.href="./meetup.html";
 }
+
 function goToJoin() {
-    window.location.replace("./join.html");
+
+    window.location.href="./join.html"
 }
 
 function insertName(){
@@ -23,4 +29,5 @@ function insertName(){
      })
     }
     insertName();
+
     
