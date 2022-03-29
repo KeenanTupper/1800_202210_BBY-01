@@ -1,8 +1,13 @@
 function rndCode() {
-    let code = Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10))
+    let rndcode = Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10))
      + "" + Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10));
-    document.getElementById("code").innerHTML(code);
+    db.collection("meetups").doc(rndcode).set({
+        code: rndcode
+    })
     console.log(code);
-    document.getElementById("random-code").innerText(code);
+    document.getElementById("code").innerText=code;
+    document.getElementById("random-code").innerText=code;
 }
+
+rndCode();
 
