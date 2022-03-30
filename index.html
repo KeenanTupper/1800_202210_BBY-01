@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Olympic Master</title>
+  <title>Olympic Talk</title>
   <meta name="comp1800 boilerplate code" content="my bcit project">
   <meta name="author" content="BCIT">
 
@@ -31,25 +31,31 @@
 
 <body>
   <!--Bootstrap navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-success">
-    <img src="./images/navbar-icon.png" height="36">
-    <a class="navbar-brand" href="#">Olympic Master</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container">
+      <img src="./images/navbar-icon.png" height="36">
+      <a class="navbar-brand" href="#">Olympic Talk</a>
+
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <nav><a href="pre-index.html " class="button ">Log Out</a></nav>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item">
+            <a href="pre-index.html " class="button ">Log Out</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -58,23 +64,26 @@
 
     <div class="px-4 py-5 my-5 text-center">
       <img class="d-block mx-auto mb-4" src="OlympicIcon.png" alt="" width="824" height="485">
-      <h1 class="display-5 fw-bold">Olympic Master</h1>
+      <h1 class="display-5 fw-bold">Olympic Talk</h1>
       <div class="col-lg-6 mx-auto">
         <h2>Welcome, <span id="user-name"></span></h2>
         <p class="lead mb-4">Begin finding your Group quicker today!</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <!--onclick="goToMeet()" onclick="goToJoin()"  Changed redirection method-->
-          <button type="button"  class="btn btn-primary btn-lg px-4 gap-3 notxtdecor" onclick="goToMeet()">Make Group</button>
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3 notxtdecor" onclick="goToMeet()">Make Group</button>
           <button type="button" class="btn btn-outline-secondary btn-lg px-4 notxtdecor"><a href="join.html">Join Group</a></button>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="py-3 bg-success">
-    <div class="container">
-      2022 BCIT COMP1800 Creations
-    </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  my-4 border-top fixed-bottom">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 BCIT COMP1800 Creations</p>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+                  <use xlink:href="#bootstrap" />
+              </svg>
+    </a>
   </footer>
 
   <script src="./scripts/firebase/firebase.js"></script>

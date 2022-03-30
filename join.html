@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Join a Room</title>
+  <title>Olympic Talk</title>
   <meta name="comp1800 boilerplate code" content="my bcit project">
   <meta name="author" content="BCIT">
 
@@ -13,15 +13,15 @@
   <!-- Boostrap Library JS CDN  go here -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-   <!-- Firebase 8 Library related CSS CDN go here -->
+  <!-- Firebase 8 Library related CSS CDN go here -->
   <!-- Firebase 8 Library related JS CDN go here-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
-      <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"/>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+
   <!-- Other libraries go here -->
 
   <!-- Link to styles of your own -->
@@ -30,64 +30,62 @@
 
 <body>
   <!--Bootstrap navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-success">
-    <img src="./images/navbar-icon.png" height="36">
-    <a class="navbar-brand" href="#">Olympic Master</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <div class="container">
+      <img src="./images/navbar-icon.png" height="36">
+      <a class="navbar-brand" href="#">Olympic Master</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <a href="pre-index.html" class="button">Log Out</a>
-          </div>
-        </nav>
-      
-        <main>
-          <h1 class="visually-hidden">Heroes examples</h1>
-      
-          <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="OlympicIcon.png" alt="" width="824" height="485">
-            <h1 class="display-5 fw-bold">Please enter the code given by the room's creator</h1>
-            <div class="col-lg-6 mx-auto">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Room Code" aria-label="Recipient's username" aria-describedby="button-addon2" maxlength="4">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="getCodeNumber()">Submit</button>
-                </div>
-            </div>
-          </div>
-        </main>
-      
-      
-      <footer class="py-3 bg-success">
-        <div class="container">
-          Get to your location easily
-        </div>
-      </footer>
-       
-
-
-  <footer class="py-3 bg-success">
-    <div class="container">
-      2022 BCIT COMP1800 Creations
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <a href="pre-index.html" class="button">Log Out</a>
+      </div>
     </div>
+  </nav>
+
+  <main>
+    <h1 class="visually-hidden">Heroes examples</h1>
+
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="OlympicIcon.png" alt="" width="824" height="485">
+      <h1 class="display-5 fw-bold">Please enter the code given by the room's creator</h1>
+      <div class="col-lg-6 mx-auto">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Room Code" aria-label="Recipient's username" aria-describedby="button-addon2" maxlength="4">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="getCodeNumber()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  my-4 border-top fixed-bottom">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 BCIT COMP1800 Creations</p>
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+                  <use xlink:href="#bootstrap" />
+              </svg>
+    </a>
   </footer>
 
   <script src="./scripts/firebase/firebase.js"></script>
   <script src="./scripts/firebase/join.js"></script>
-  
+
 
 </body>
 
