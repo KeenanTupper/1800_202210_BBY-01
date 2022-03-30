@@ -20,11 +20,12 @@ when I signup/login:
                owner: 0984
                members:[8914, 0984, 9877]
                meeting-location: geolocation 
-               leads/0938 /owner: 9877
+
+leads/0938 /owner: 9877
                            details: "too short, i cant see a thing"
                            picture: link to the picture
                            timestamp: march22, 8:03pm
-                     9081 /owner: 8914
+      9081 /owner: 8914
                            details: "there is a subway here"
                            picture: link to the picture
                            timestamp: march22, 9:00pm
