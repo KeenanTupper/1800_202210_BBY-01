@@ -20,6 +20,7 @@
       <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
       <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
       <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css"/>
   
     <!-- Other libraries go here -->
@@ -60,46 +61,22 @@
         <h1 class="visually-hidden">Heroes examples</h1>
     
         <div class="px-4 py-5 my-5 text-center">
+
           <div class="col-lg-6 mx-auto">
             <h2>Your code is, <span id="random-code2"></span></h2>
             <p class="lead mb-4">Meetup using your leads!</p>
-            
+            <h2>User: <span id="user" ></span></h2>
+            <h3>Other users: <span id="insert-users"></span></h3>
           </div>
+
+          <div class="container text-center py-3">
+            <input type="file" id="mypic-input" accept="image/*" />
+          </div>
+          <img id="mypic-goes-here" src="images/blah.jpg" />
+
         </div>
       </main>
-    
- 
-
-<!-- Use cards to update new information, left is newest-->
-<div class="row row-cols-auto d-flex justify-content-center">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./images/card3.jfif" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
   
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./images/card1.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="./images/card2.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
-
 
 
     <footer class="py-3 bg-success mt-auto">
