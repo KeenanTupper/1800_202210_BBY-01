@@ -51,42 +51,6 @@ function registerOwner() {
 
 
 // add image and use cloud
-function showUploadedPicture(){
-    const fileInput = document.getElementById("mypic-input");   // pointer #1
-    const image = document.getElementById("mypic-goes-here");   // pointer #2
-
-    //attach listener to input file
-    //when this file changes, do something
-    fileInput.addEventListener('change', function(e){
-
-        //the change event returns a file "e.target.files[0]"
-        var blob = URL.createObjectURL(e.target.files[0]);
-
-        //change the DOM img element source to point to this file
-        image.src = blob;    //assign the "src" property of the "img" tag
-    })
-}
-showUploadedPicture();
-
-fileInput.addEventListener('change', function(e){       //event listener
-    const pickedfile = e.target.files[0];  // file that user picked
-image.src = URL.createObjectURL(pickedfile); //event handler
-})
-
-
-var storageRef = firebase.storage().ref("images/" + user.uid + ".jpg"); // Get reference
-// Upload picked file to cloud storage
-storageRef.put(pickedfile)
-.then(function(){
-	   storageRef.getDownloadURL()
-     .then(function (url) { // Get URL of the uploaded file
-           console.log(url); // Save the URL into users collection
-           db.collection("users").doc(user.uid).update({
-               "profile-pic": url
-           })
-      })
-})
-
 function uploadUserProfilePic() {
     // Let's assume my storage is only enabled for authenticated users 
     // This is set in your firebase console storage "rules" tab
