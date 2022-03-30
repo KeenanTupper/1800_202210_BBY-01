@@ -3,14 +3,21 @@ let rndcode;
 
 function getrndCode() {
 
-    rndcode = window.localStorage.getItem("code");
-    db.collection("meetups").doc(rndcode).set({
-        code: rndcode
-    });
+        rndcode = window.localStorage.getItem("code");
+        console.log(rndcode);
+        db.collection("meetups").doc(rndcode).set({
+            code: rndcode
+        });
+        if (window.localStorage.getItem == null) {
+        alert("no group code")
+    }
     
-    console.log(rndcode);
-}
+}   
 getrndCode();
+
+
+
+
 
 document.getElementById("random-code").innerText=rndcode;
 document.getElementById("random-code2").innerText=rndcode;
