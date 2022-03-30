@@ -78,8 +78,8 @@ function uploadUserProfilePic() {
             storageRef.getDownloadURL()
                 .then(function (url) {   // Get URL of the uploaded file
                     console.log(url);    // Save the URL into users collection
-                    db.collection("users").doc(user.uid).update({
-                        "profilePic": url
+                    db.collection("meetups").doc(window.localStorage.getItem("code")).update({
+                        "images": url
                     })
                     .then(function(){
                         console.log('Added Profile Pic URL to Firestore.');

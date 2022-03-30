@@ -1,3 +1,5 @@
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyClcOiQo5vsZXmW0YBvWqZUI6TB7gox48A",
   authDomain: "bby1-agile.firebaseapp.com",
@@ -11,6 +13,6 @@ const firebaseConfig = {
 
 const app = firebase.initializeApp(firebaseConfig);
 
-var storage = firebase.storage();
 const db = firebase.firestore();
+var storage = firebase.storage();
 
