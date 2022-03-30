@@ -1,3 +1,4 @@
+// create random code and display on page
 let rndcode;
 
 function getrndCode() {
@@ -10,10 +11,12 @@ function getrndCode() {
     console.log(rndcode);
 }
 getrndCode();
-document.getElementById("code").innerText=rndcode;
+
 document.getElementById("random-code").innerText=rndcode;
+document.getElementById("random-code2").innerText=rndcode;
 
 
+// add user to database
 function registerUser() {
 
     firebase.auth().onAuthStateChanged(user =>{
@@ -31,6 +34,21 @@ function registerUser() {
 }
 registerUser();
 
+// give owner ability to delete images
 function registerOwner() {
 
+}
+
+
+
+
+function userAddImage() {
+    if (localStorage.getItem("code") == db.collection) {
+
+    }
+}
+
+function removeCodes() {
+    localStorage.removeItem("code");
+    localStorage.removeItem("typedcode");
 }
