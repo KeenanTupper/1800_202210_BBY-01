@@ -1,3 +1,19 @@
 #float-right {
-    margin-left:auto;
+    border:solid black;
+    border-radius: 5%;
+    background-color: blue;
+    float:right;
+    text-align: right;
+    object-fit: contain;
+    width: 30%;
+}
+
+#float-left {
+    border:solid;
+    border-radius: 5%;
+    background-color: gray;
+    float:left;
+    text-align: left;
+    object-fit: contain;
+    width: 30%;
 }

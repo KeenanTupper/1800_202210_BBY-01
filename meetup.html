@@ -32,11 +32,15 @@
 
 
 <body class="d-flex flex-column min-vh-100">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <div class="contatiner">
+      <img src="./images/navbar-icon.png" height="36">
         <a class="navbar-brand" href="index.html">Olympic Talk</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+      </div>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
@@ -51,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
             </li>
-            <li class="nav-item" id="float-right">
+            <li class="nav-item">
               <a class="nav-link" href="#">CODE: <span id="random-code"></span></a>
             </li>
           </ul>
@@ -64,18 +68,28 @@
         <div class="px-4 py-5 my-5 text-center">
 
           <div class="col-lg-6 mx-auto">
-            <h2>Your code is, <span id="random-code2"></span></h2>
-            <p class="lead mb-4">Meetup using your leads!</p>
             <h2>User: <span id="user"></span></h2>
-            <h3>Other users: <span id="insert-users"></span></h3>
+            <h3>Your code is: <span id="random-code2"></span></h3><br>
+            <p class="lead mb-4">Meetup using your leads!</p>
+            
           </div>
 
           <div class="container text-center py-3">
             <input type="file" id="mypic-input" accept="image/*" />
           </div>
-          <img id="mypic-goes-here" />
+
+          <div class="container text-center py-3">
+            <input type="search" id="textinput" />
+            <button onclick="uploadText()">Comment</button>
+          </div>
+
+          <div class="container text-center py-3" id="addContent">
+            <img id="mypic-goes-here"/>
+          </div>
+          
 
         </div>
+      
       </main>
   
 

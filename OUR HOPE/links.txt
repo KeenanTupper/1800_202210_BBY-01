@@ -1,0 +1,4 @@
+https://unexpected-box-0c1.notion.site/1800-Tech-Tips-202130-09931a5a4cd640f3ae687db588fab918 tech tips carly
+https://unexpected-box-0c1.notion.site/1800-Tech-Tips-202210-a8394d76569c410590da1dcc86106ab1 tech tips 
+https://getbootstrap.com/docs/4.0/getting-started/introduction/ bootstrap documentation
+https://firebase.google.com/docs/storage/web/start#web-version-8 firebase documentation
