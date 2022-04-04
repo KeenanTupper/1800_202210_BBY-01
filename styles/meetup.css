@@ -1,19 +1,20 @@
 #float-right {
-    border:solid black;
-    border-radius: 5%;
-    background-color: blue;
-    float:right;
+    border:solid #000000;
+    border-radius: 10px;
+    background-color: rgb(106, 150, 232);
+    padding-right:2%;
     text-align: right;
-    object-fit: contain;
     width: 30%;
+    color: white;
+    float: right;
 }
 
 #float-left {
-    border:solid;
-    border-radius: 5%;
+    border:solid #000000;
+    border-radius: 10px;
+    padding-left:2%;
     background-color: gray;
-    float:left;
     text-align: left;
-    object-fit: contain;
     width: 30%;
+    color: white;
 }

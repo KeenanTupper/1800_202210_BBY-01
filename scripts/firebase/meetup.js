@@ -87,29 +87,36 @@ function uploadUserProfilePic() {
         // listen for file selection
         fileInput.addEventListener('change', function (e) {
             var file = e.target.files[0];
+            
             //var blob = URL.createObjectURL(file);
             //image.src = blob;            // display this image
 
 
 
             // MAKE A FOR LOOP THAT GOES THROUGH HOW MANY IMAGES AND ADDS IMAGE WITH 
-            rndurl = Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10))
-            +  "" + Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10))
-            +  "" + Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10))
-            +  "" + Math.floor((Math.random() * 10)) + "" + Math.floor((Math.random() * 10));
+            var rndurl = Math.floor(100000 + Math.random() * 900000);
+            var reference;
+            console.log(rndurl);
 
             //+ "/upload" + i
-            var storageRef = storage.ref("images/" + rndurl  + ".jpg"); 
             
+            
+            firebase
+            .storage()
+            .ref("images/" + rndurl + ".jpg")
+            .getDownloadURL();
 
-            //upload the picked file
+            var storageRef = storage.ref().child("images/" + rndurl + ".jpg"); 
+
             storageRef.put(file) 
             .then(function(){
                 console.log('Uploaded to Cloud Storage.');
-                console.log(storageRef);
-                console.log(storageRef.)
+                
             })
 
+
+            //upload the picked file
+            
             
             storageRef.getDownloadURL()
                 .then(function (url) {   // Get URL of the uploaded file
@@ -140,18 +147,24 @@ function pullData() {
         
         querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
-            
+            firebase.auth().onAuthStateChanged(user => {
             if(doc.data().leadtext) {
-                addstuff.innerHTML+="<p>" + doc.data().leadtext + "<br>"
-            + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
+                if(doc.data().user == user.uid) {
+                    addstuff.innerHTML+="<p><span id=\"float-right\">" + doc.data().leadtext + "</span><br>"
+                    + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
+                } else {
+                    addstuff.innerHTML+="<p><span id=\"float-left\">" + doc.data().leadtext + "</span ><br>"
+                    + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
+                }
+                
             console.log(doc.data().leadtext);
             } else if(doc.data().leadimg){
                 addstuff.innerHTML+="<img src=\"" + doc.data().leadimg + "\">" 
             + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
             }
-            console.log(doc.data().leadimg);
-
             
+
+        })
         });
     });
 
