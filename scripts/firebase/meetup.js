@@ -150,17 +150,17 @@ function pullData() {
             firebase.auth().onAuthStateChanged(user => {
             if(doc.data().leadtext) {
                 if(doc.data().user == user.uid) {
-                    addstuff.innerHTML+="<p><span id=\"float-right\">" + doc.data().leadtext + "</span><br>"
-                    + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
+                    addstuff.innerHTML+="<div><p id=\"float-right\">" + doc.data().leadtext + "</p><br>"
+                    + "<h6 id=\"timestampbottom\">Time: " + doc.data().timestamp.toDate()  + "</h6></div>";
                 } else {
-                    addstuff.innerHTML+="<p><span id=\"float-left\">" + doc.data().leadtext + "</span ><br>"
-                    + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
+                    addstuff.innerHTML+="<div><p id=\"float-left\">" + doc.data().leadtext + "</p> <br>"
+                    + "<h6 id=\"timestampbottom\">Time: " + doc.data().timestamp.toDate()  + "</h6></div>";
                 }
                 
             console.log(doc.data().leadtext);
             } else if(doc.data().leadimg){
-                addstuff.innerHTML+="<img src=\"" + doc.data().leadimg + "\">" 
-            + "<h6>Time: " + doc.data().timestamp.toDate()  + "</h6></p>";
+                addstuff.innerHTML+="<div><img src=\"" + doc.data().leadimg + "\">" 
+            + "<h6 id=\"timestampbottom\">Time: " + doc.data().timestamp.toDate()  + "</h6></div>";
             }
             
 
