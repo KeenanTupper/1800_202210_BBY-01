@@ -36,9 +36,10 @@
     clear:both;
 }
 
-img {
+#rapid {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    height: 20%;
+    width: 20%;
 }

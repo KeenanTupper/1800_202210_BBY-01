@@ -159,7 +159,7 @@ function pullData() {
                 
             console.log(doc.data().leadtext);
             } else if(doc.data().leadimg){
-                addstuff.innerHTML+="<div><img src=\"" + doc.data().leadimg + "\">" 
+                addstuff.innerHTML+="<div><img id=\"rapid\" src=\" " + doc.data().leadimg + "\">" 
             + "<h6 id=\"timestampbottom\">Time: " + doc.data().timestamp.toDate()  + "</h6></div>";
             }
             
