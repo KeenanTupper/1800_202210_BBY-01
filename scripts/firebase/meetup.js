@@ -19,7 +19,6 @@ function getrndCode() {
     
 }   
 getrndCode();
-document.getElementById("random-code").innerText=rndcode;
 document.getElementById("random-code2").innerText=rndcode;
 
 
